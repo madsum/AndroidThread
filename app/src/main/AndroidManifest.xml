@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.masum.anroidthread" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.masum.pendingIntent.PendingIntendActivity"
+            android:label="@string/title_activity_pending_intend" >
+        </activity>
+        <activity
+            android:name="com.masum.Thread.HandlerMessagesActivity"
+            android:label="Thread by Message">
+        </activity>
+        <activity
+            android:name="com.masum.Thread.HandlerRunnableActivity"
+            android:label="Thread By Runable">
+
+        </activity>
+
+        <receiver android:name="com.masum.broadcastReceiver.MyBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="abc" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.masum.pendingIntent.MyReceiver" >
+        </receiver>
+
+        <service
+            android:name="com.masum.indentService.MyIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".ThreadActivity"
+            android:label="@string/title_activity_thread" >
+        </activity>
+        <activity
+            android:name=".Test"
+            android:label="@string/title_activity_test" >
+        </activity>
+    </application>
+
+</manifest>
