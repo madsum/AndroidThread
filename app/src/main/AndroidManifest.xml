@@ -30,12 +30,23 @@
 
         </activity>
 
-        <receiver android:name="com.masum.broadcastReceiver.MyBroadcastReceiver" >
+<!--        <receiver android:name="com.masum.broadcastReceiver.MyBroadcastReceiver" >
             <intent-filter>
                 <action android:name="abc" />
             </intent-filter>
-        </receiver>
+        </receiver>-->
+
         <receiver android:name="com.masum.pendingIntent.MyReceiver" >
+        </receiver>
+
+        <receiver
+            android:name="com.masum.broadcastReceiver.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="abc"/>
+                <category android:name="category" />
+            </intent-filter>
         </receiver>
 
         <service

@@ -65,32 +65,6 @@ public class ThreadActivity extends ActionBarActivity {
         }
     };
 
-/*
-    public android.os.Handler handler = new android.os.Handler() {
-
-        @Override
-        public void handleMessage(Message msg) {
-
-            switch (msg.what) {
-                case 0: {
-                    long threadId = Thread.currentThread().getId();
-                    Log.i(MainActivity.TAG, "case 0: Mian threadid: " + threadId + " " + msg.obj.toString());
-                    break;
-                }
-                case 1: {
-                    long threadId = Thread.currentThread().getId();
-                    Log.i(MainActivity.TAG, "case 1: Mian threadid: " + threadId + " " + msg.obj.toString());
-                    break;
-                }
-                case 2: {
-                    long threadId = Thread.currentThread().getId();
-                    Log.i(MainActivity.TAG, "case 2: Mian threadid: " + threadId + " " + msg.obj.toString());
-                    break;
-                }
-            }
-        }
-    };
-*/
     private class MyThread extends Thread{
         private Handler mHandler;
 
